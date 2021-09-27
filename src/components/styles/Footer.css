@@ -1,0 +1,9 @@
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.img-Logo{
+    height: 40px; 
+}
+
