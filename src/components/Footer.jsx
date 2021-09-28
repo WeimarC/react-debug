@@ -68,7 +68,7 @@ const PieDePagina = () => {
       <ul>{transformarEnlacesExternos}</ul>
     </div>
     <div className="footerEnd">
-      <div className="DDA">
+      <div className="DR">
         <p>Todos los derechos reservados 2003-2021. República Argentina. INCAA</p>
         <p>Lima 319; Código Postal: C1073AAG, CABA; República Argentina.</p>
       </div>

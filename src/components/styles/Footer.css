@@ -4,6 +4,8 @@
     height: 40px;
     margin: 40px;
     border-right: #404040 1px solid;
+    padding: 1rem;
+    margin: 2rem;
 }
 
 #root > footer > div > ul > li:nth-child(3) > a > img {
@@ -15,7 +17,7 @@
     justify-content: center;
 }
 
-.DDA p {
+.DR p {
     color: white;
     font-family: var(--tipografia);
     font-size: 12px;
@@ -24,6 +26,7 @@
 
 .endLogos img {
     height: 50px;
+    margin: 1rem;
 }
 
 .endLogos ul{
