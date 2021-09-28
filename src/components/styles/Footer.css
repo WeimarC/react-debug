@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,900&display=swap');
+
 .logos img {
     height: 40px;
     margin: 40px;
@@ -15,7 +17,9 @@
 
 .DDA p {
     color: white;
+    font-family: var(--tipografia);
     font-size: 12px;
+    
 }
 
 .endLogos img {
@@ -25,6 +29,18 @@
 .endLogos ul{
     display: flex;
     justify-content: flex-end;
+    
+}
+
+.footerEnd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 30px 50px;
 }
 
+
+/*fuentes De Tipografia*/
+:root {
+    --tipografia:'Roboto', sans-serif;
+}
