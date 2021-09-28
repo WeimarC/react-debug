@@ -3,25 +3,25 @@ import "./styles/Footer.css";
 
 const enlacesExternos = [
   {
-    textoAlternativo: "link-Tv",
+    textoAlternativo: "cineArTv",
     srcDelLogo: "http://cine.ar/img/tv.cine.ar.svg",
   },
   {
-    textoAlternativo: "link-Play",
+    textoAlternativo: "cineArPlay",
     srcDelLogo: "http://cine.ar/img/play.cine.ar.svg",
   },
   {
-    textoAlternativo: "link-Estrenos",
+    textoAlternativo: "cineArEstrenos",
     srcDelLogo: "http://cine.ar/img/estrenos.cine.ar.svg",
   },
 ];
 
-const enlacesExternosAPag = enlacesExternos.map(
+const transformarEnlacesExternos = enlacesExternos.map(
   ({ textoAlternativo, srcDelLogo }) => (
-    <li className="logo-CineAR">
-      <a className="link-CineAR" href="/">
+    <li className="li-logo">
+      <a className="a-logo" href="/">
         <img
-          className="img-Logo "
+          className="img-logo "
           src={srcDelLogo}
           alt={textoAlternativo}
         />
@@ -30,32 +30,50 @@ const enlacesExternosAPag = enlacesExternos.map(
   )
 );
 
+const logosEnd = [
+  {
+    textoAlternativo: "CineAr",
+    srcDelLogo: "http://cine.ar/img/logo-cinear.svg",
+  },
+  {
+    textoAlternativo: "CineAr",
+    srcDelLogo: "http://cine.ar/img/logo-arsat.svg",
+  },
+  {
+    textoAlternativo: "CineAr",
+    srcDelLogo: "http://cine.ar/img/logo-incaa.svg",
+  },
+];
+
+const transformarLogos = logosEnd.map(
+  ({ textoAlternativo, srcDelLogo }) => (
+    <li className="li-logoEnd">
+      <a className="a-logoEnd" href="/">
+        <img
+          className="img-logoEnd "
+          src={srcDelLogo}
+          alt={textoAlternativo}
+        />
+      </a>
+    </li>
+  )
+);
+
+
+
 const PieDePagina = () => {
   return (
   <footer>
-      {enlacesExternosAPag}
-      <div className="PieDePagina">
-        "Todos los derechos reservados 2003-2021. República Argentina. INCAA"
-        <br />
-        "Lima 319; Código Postal: C1073AAG, CABA; República Argentina."
+    <div className="logos">
+      <ul>{transformarEnlacesExternos}</ul>
+    </div>
+      <div className="DDA">
+        <p>Todos los derechos reservados 2003-2021. República Argentina. INCAA</p>
+        <p>Lima 319; Código Postal: C1073AAG, CABA; República Argentina.</p>
       </div>
-      <ul className="link-Redes">
-        <li>
-          <a href="">
-            <img src="http://cine.ar/img/logo-cinear.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="http://cine.ar/img/logo-arsat.svg" alt="" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="http://cine.ar/img/logo-incaa.svg" alt="" />
-          </a>
-        </li>
-      </ul>
+    <div className="endLogos">
+      <ul>{transformarLogos}</ul>
+    </div>
   </footer>
   );
 };
