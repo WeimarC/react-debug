@@ -3,9 +3,9 @@
 .logos img {
     height: 40px;
     margin: 40px;
-    border-right: #404040 1px solid;
-    padding: 1rem;
-    margin: 2rem;
+    /* border-right: #404040 1px solid;
+    padding-right: 35px; */
+    margin: 3rem;
 }
 
 #root > footer > div > ul > li:nth-child(3) > a > img {
