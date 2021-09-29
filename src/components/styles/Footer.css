@@ -17,11 +17,12 @@
     justify-content: center;
 }
 
+/* -------- ------- ------Logos finales ------ ----- ----- */
+
 .DR p {
     color: white;
     font-family: var(--tipografia);
-    font-size: 12px;
-    
+    font-size: 12px; 
 }
 
 .endLogos img {
